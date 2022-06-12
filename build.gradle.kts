@@ -5,7 +5,7 @@ plugins {
   java
   application
   id("com.github.johnrengelman.shadow") version "7.1.2"
-  id("io.freefair.lombok") version "6.4.3"
+  id("io.freefair.lombok") version "6.4.3.1"
 }
 
 group = "com.example"
@@ -17,6 +17,7 @@ repositories {
 
 val vertxVersion = "4.3.1"
 val junitJupiterVersion = "5.8.2"
+val sl4fjVersion = "1.7.36"
 
 val mainVerticleName = "com.example.push.MainVerticle"
 val launcherClassName = "io.vertx.core.Launcher"
@@ -32,6 +33,9 @@ dependencies {
   implementation(platform("io.vertx:vertx-stack-depchain:$vertxVersion"))
   implementation("io.vertx:vertx-web-client")
   implementation("io.vertx:vertx-web")
+  implementation("org.slf4j:slf4j-api:$sl4fjVersion")
+  implementation("ch.qos.logback:logback-core:1.2.11")
+  implementation("ch.qos.logback:logback-classic:1.2.11")
   testImplementation("io.vertx:vertx-junit5")
   testImplementation("org.junit.jupiter:junit-jupiter:$junitJupiterVersion")
 }
