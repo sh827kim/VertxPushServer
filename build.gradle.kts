@@ -33,6 +33,7 @@ dependencies {
   implementation(platform("io.vertx:vertx-stack-depchain:$vertxVersion"))
   implementation("io.vertx:vertx-web-client")
   implementation("io.vertx:vertx-web")
+  implementation("io.vertx:vertx-stomp")
   implementation("org.slf4j:slf4j-api:$sl4fjVersion")
   implementation("ch.qos.logback:logback-core:1.2.11")
   implementation("ch.qos.logback:logback-classic:1.2.11")

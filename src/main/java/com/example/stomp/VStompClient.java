@@ -1,4 +1,4 @@
 package com.example.stomp;
 
-public class StompClient {
+public class VStompClient {
 }
